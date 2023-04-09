@@ -1,0 +1,68 @@
+﻿<Window x:Class="WinLossCounter.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinLossCounter"
+        mc:Ignorable="d"
+        Title="SettingsWindow" Width="400" Height="176">
+    <Border Margin="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="95" />
+                <ColumnDefinition Width="260"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Filepath -->
+            <TextBlock 
+                Text="Filepath" 
+                Grid.Row="0"
+                Grid.Column="0"
+                FontSize="16"
+                VerticalAlignment="Center"
+                />
+            <TextBox
+                x:Name="FilepathText"
+                Grid.Row="0"
+                Grid.Column="1"
+                VerticalAlignment="Center"
+                Padding="5"
+                />
+
+            <!-- Format -->
+            <TextBlock 
+                Text="Format" 
+                Grid.Row="1"
+                Grid.Column="0"
+                FontSize="16"
+                VerticalAlignment="Center"
+                />
+            <TextBox
+                x:Name="FormatText"
+                Grid.Row="1"
+                Grid.Column="1"
+                VerticalAlignment="Center"
+                Padding="5"
+                />
+
+            <!-- Save button -->
+            <Button
+                x:Name="SaveButton"
+                Grid.Row="2"
+                Grid.Column="1"
+                Content="Save &amp; Close"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontSize="20"
+                Width="150"
+                />
+        </Grid>
+    </Border>
+</Window>
